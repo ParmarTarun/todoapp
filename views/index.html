@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Todo APP</title>
 </head>
 
 <body>
-Write your code here
+    <Header class="my-header">
+        <h2>TODO APP</h2>
+        <form>
+            <input type="text" placeholder="Eg: Read book" />
+            <button class="add-btn">ADD</button>
+        </form>
+    </Header>
+    <section class="main-body">
+        <div class="tabs">
+            <div class="tab selected">
+                <p>ALL</p>
+            </div>
+            <div class="tab">
+                <p>Completed</p>
+            </div>
+            <div class="tab">
+                <p>Pending</p>
+            </div>
+        </div>
+        <div class="todos-list">
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ul>
+        </div>
+    </section>
 </body>
+
 </html>
