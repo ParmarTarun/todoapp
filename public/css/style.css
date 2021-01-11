@@ -61,6 +61,12 @@ p{
 .tabs .selected{
     border-bottom: 1px solid var(--primary);
 }
+.todos-list{
+    display: none;
+}
+.tabs-content .active{
+    display: block;
+}
 
 .todos-list ul{
     list-style: none;

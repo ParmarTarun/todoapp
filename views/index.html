@@ -14,26 +14,40 @@
             <button class="add-btn">ADD</button>
         </form>
     </Header>
-    <section class="main-body">
+    <main class="main-body">
         <div class="tabs">
-            <div class="tab selected">
+            <div class="tab selected" id="all" onclick="toggleTab(event)">
                 <p>ALL</p>
             </div>
-            <div class="tab">
+            <div class="tab" id="completed" onclick="toggleTab(event)">
                 <p>Completed</p>
             </div>
-            <div class="tab">
+            <div class="tab" id="pending" onclick="toggleTab(event)">
                 <p>Pending</p>
             </div>
         </div>
-        <div class="todos-list">
-            <ul>
-                <li>First</li>
-                <li>Second</li>
-                <li>Third</li>
-            </ul>
+        <div class="tabs-content">
+            <div class="todos-list all active">
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+            <div class="todos-list completed">
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                </ul>
+            </div>
+            <div class="todos-list pending">
+                <ul>
+                    <li>Third</li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </main>
+    <script src="js/todo.js"></script>
 </body>
 
 </html>
